@@ -1,0 +1,151 @@
+.App {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 70px;
+}
+
+.headerLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  height: 40px;
+}
+
+.menuOption {
+  line-height: 40px;
+}
+
+.logo{
+  height: 40px;
+}
+
+.content {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 20px;
+  background-color: white;
+}
+
+.firstColumn {
+  width: 500px;
+  min-height: 200px;
+}
+
+.secondColumn {
+  width: 800px;
+  min-height: 200px;
+}
+
+.currentBalance {
+  height: 70px;
+  font-size: 70px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  text-align: bottom;
+}
+
+.balanceOptions {
+  margin-top: 20px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+
+.extraOption {
+  width: 180px;
+  text-align: center;  
+  border: 2px solid rgba(0, 102, 255, 0.31);
+  border-radius: 1000px;
+  font-weight: 600;
+  color: rgba(0, 102, 255, 0.714);
+  transition: 0.4s color, 0.4s background-color;
+}
+
+.extraOption:hover {
+  cursor: pointer;
+  background-color: #31579E;
+  color: white;
+}
+
+.requestAndPay {
+  width: 100%; 
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.quickOption {
+  background-color: #31579E;
+  height:100px;
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.numReqs {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  height: 25px;
+  width: 25px;
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quickOption:hover {
+  cursor: pointer;
+}
+
+.accountDetailRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin-left: 25px;
+  gap: 30px;
+}
+
+.accountDetailHead {
+  font-weight: 700;
+  font-size: 16px;
+  color: #4f4f4f;
+}
+
+.accountDetailBody {
+  color: #767676;
+  font-size: 12px;
+  font-weight: 600;
+}
