@@ -30,7 +30,7 @@ app.get("/getNameAndBalance", async (req, res) => {
     address: "Your Smart Contract",
     functionName: "getMyName",
     abi: ABI,
-    params: { me: userAddress },
+    params: { _user: userAddress },
   });
 
   const jsonResponseName = response.raw;
@@ -55,7 +55,7 @@ app.get("/getNameAndBalance", async (req, res) => {
     address: "Your Smart Contract",
     functionName: "getMyHistory",
     abi: ABI,
-    params: { me: userAddress },
+    params: { _user: userAddress },
   });
 
   const jsonResponseHistory = convertArrayToObjects(fourResponse.raw);
@@ -66,7 +66,7 @@ app.get("/getNameAndBalance", async (req, res) => {
     address: "Your Smart Contract",
     functionName: "getMyRequests",
     abi: ABI,
-    params: { me: userAddress },
+    params: { _user: userAddress },
   });
 
   const jsonResponseRequests = fiveResponse.raw;
